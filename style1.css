@@ -1,0 +1,129 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('image1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  h1 {
+    text-align: center;
+    color: aqua;
+    font-size: 50px;
+  }
+  
+  form {
+    background-color: #ffffffa0;
+    padding: 30px;
+    border-radius: 5px;
+    margin: 0 auto;
+    background-attachment: fixed; /* Fixe l'arrière-plan du formulaire */
+    background-position: center;
+    background-size: cover;
+    max-width: 400px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  select {
+    width: 60%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+  
+  select {
+    appearance: none;
+    -webkit-appearance: none;
+    background-image: url("down-arrow.png");
+    background-position: right center;
+    background-repeat: no-repeat;
+    padding-right: 50px;
+  }
+  
+  input[type="submit"] {
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  
+  h2 {
+    text-align: center;
+    color: aqua;
+    font-size: 30px;
+    margin-top: 40px;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .form-container {
+    margin: 10px;
+    background-color: #ffffffa0;
+    padding: 30px;
+    border-radius: 5px;
+    max-width: 400px;
+  }
+  
+  .form-container h2 {
+    text-align: center;
+    color: aqua;
+    font-size: 30px;
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+  
+  #connexion-form {
+    background-color: #ffffffa0;
+    padding: 30px;
+    border-radius: 5px;
+    margin: 0 auto;
+    background-attachment: fixed; /* Fixe l'arrière-plan du formulaire */
+    background-position: center;
+    background-size: cover;
+    max-width: 400px;
+    margin-bottom: 40px;
+  }
+  
+  #connexion-form label,
+  #connexion-form input[type="text"],
+  #connexion-form input[type="password"] {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  #connexion-form input[type="submit"] {
+    background-color: #008cba;
+  }
+  
+  #connexion-form input[type="submit"]:hover {
+    background-color: #00677d;
+  }
+  
