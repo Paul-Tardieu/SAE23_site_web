@@ -11,7 +11,7 @@ body {
     background-attachment: fixed;
   }
 
-  h1 {
+  h1, h2 {
     color: #e32c08;
     font-size: 50px;
   }
