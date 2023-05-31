@@ -5,12 +5,11 @@
 ## Sommaire:
 <br>
 
+- [Organisation siteweb](#organisation-site-web)
+
 - [Organisation base de donnée](#organisation-base-de-donnée)<br>
 
 - [Rappel github](#rappel-commande-github)
-
-- [Organisation siteweb](#organisation-site-web)
-
 
 <br><u>
 
