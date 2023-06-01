@@ -8,6 +8,7 @@
 <body>
   <div class="container">
     <div class="form-container">
+      
       <h2>Création de compte</h2>
       <form id="creation-form" action="traitement_creation_compte.php" method="POST">
         <label for="prenom">Prénom :</label>
@@ -32,10 +33,14 @@
           <option value="pole3">Pôle Médecine, Femme, Mère & Enfant</option>
         </select><br>
 
+        <input type="hidden" name="action" value="inscription">
+
         <input type="submit" value="Créer un compte">
       </form>
+
     </div>
     <div class="form-container">
+
       <h2>Connexion</h2>
       <form id="connexion-form" action="traitement_connexion.php" method="POST">
         <label for="email_connexion">Email :</label>
@@ -44,7 +49,10 @@
         <label for="mot_de_passe_connexion">Mot de passe :</label>
         <input type="password" id="mot_de_passe_connexion" name="mot_de_passe_connexion" required><br>
 
+        <input type="hidden" name="action" value="connexion">
+
         <input type="submit" value="Se connecter">
+
       </form>
     </div>
   </div>
