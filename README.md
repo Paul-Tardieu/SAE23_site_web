@@ -5,17 +5,20 @@
 ## Sommaire:
 <br>
 
-- [Organisation siteweb](#organisation-site-web)
+- [Organisation site web](#organisation-site-web)
 
 - [Organisation base de donnée](#organisation-base-de-donnée)<br>
 
 - [Rappel github](#rappel-commande-github)
 
-<br><u>
+<br>
 
 ---
 
-## Organisation site web<br></u>
+<u><H3>
+## Organisation site web
+</H3></u>
+
 ### Le site web est divisé en X parties:<br><br>
 - L'accueil:<br>
 <p style='text-indent: 4.5em;'>page simple contenant des infos sur l'hopital
@@ -40,11 +43,13 @@
 <p style='text-indent: 4.5em;'>permet changement de MDP du compte
 <p style='text-indent: 4.5em;'>la modification des données de toutes les tables sauf table log et autre compte admin<br>
 
-<br><br><br><u>
+<br><br><br>
 
 ---
 
-## Organisation base de donnée<br></u>
+<u><H3>
+## Organisation base de donnée
+</H3></u>
 
 ### Tables:
 - Users
@@ -58,16 +63,17 @@
 <br>
 - Patients
 
-| pkey | prenom | nom | birthdate | num_secu | a_un_RDV |
+| pkey | prenom | nom | birthdate | num_secu | Pkey_RDV |
 |-------|-------|-------|-------|-------|-------|
-|0|Philippe|Darut|19/09/1993|56789|false|
-|1|Christelle|Lafont|31/01/1985|01234|true|
+|0|Philippe|Darut|19/09/1993|56789|0|
+|1|Christelle|Lafont|31/01/1985|01234|1|
 <br>
 - RDV
 
 | pkey | pkey_patients |Date_RDV| salle | heure | pkey_users |
 |-------|-------|-------|-------|-------|-------|
-|0|1|15/06/2023|B202|16:30|2|
+|0|0|0|0|0|0|0|
+|1|1|15/06/2023|B202|16:30|2|
 <br><br><br>
 
 ---
