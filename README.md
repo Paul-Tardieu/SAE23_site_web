@@ -51,6 +51,8 @@
 ## Organisation base de donnée
 </H3></u>
 
+Nom de la base de donnée: medical_data
+
 ### Tables:
 - Users
 
