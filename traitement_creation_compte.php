@@ -4,7 +4,7 @@ $//$servername = "localhost";
 //$password = "";
 //$dbname = "medical_data";
 
-$servername = "194.199.227.110";
+$servername = "localhost";
 $username = "u22106412";
 $password = "335460";
 $dbname = "db_TARDIEU_2";
@@ -16,7 +16,7 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
 die("Connection failed: " . $conn->connect_error);
 }
-
+sftp://u22106412@194.199.227.110/home/TARDIEU-Paul/public_html/SAE23_site_web/traitement_creation_compte.php
 // Traitement de l'inscription:
 // Récupérer les données du formulaire
 $prenom = $_POST['prenom'];

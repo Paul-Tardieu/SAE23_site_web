@@ -4,7 +4,7 @@
 //$password = "";
 //$dbname = "medical_data";
 
-$servername = "194.199.227.110";
+$servername = "localhost";
 $username = "u22106412";
 $password = "335460";
 $dbname = "db_TARDIEU_2";
