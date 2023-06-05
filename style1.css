@@ -13,13 +13,21 @@ body {
     color: aqua;
     font-size: 50px;
   }
+
+  .logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 50px;
+    height: auto;
+  }
   
   form {
     background-color: #ffffffa0;
     padding: 30px;
     border-radius: 5px;
     margin: 0 auto;
-    background-attachment: fixed; /* Fixe l'arrière-plan du formulaire */
+    background-attachment: fixed;
     background-position: center;
     background-size: cover;
     max-width: 400px;
@@ -102,13 +110,13 @@ body {
   
   #connexion-form {
     background-color: #ffffffa0;
-    padding: 30px;
+    padding: 20px;
     border-radius: 5px;
     margin: 0 auto;
     background-attachment: fixed; /* Fixe l'arrière-plan du formulaire */
     background-position: center;
     background-size: cover;
-    max-width: 400px;
+    max-width: 200px;
     margin-bottom: 40px;
   }
   
