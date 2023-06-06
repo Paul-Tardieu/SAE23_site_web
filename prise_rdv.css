@@ -1,0 +1,71 @@
+body {
+    background-image: url('6929748.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 20px;
+    text-align: center;
+    height: 100vh;
+    color: #14048d;
+  }
+  
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  
+  header .logo {
+    width: 30px;
+    height: auto;
+    margin-right: 10px;
+    float: left;
+  }
+  
+  header h1 {
+    font-size: 40px;
+    font-family: "Impact", fantasy;
+  }
+  
+  section {
+    text-align: left;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 50px;
+  }
+  
+  .partie-formulaire {
+    margin-bottom: 20px;
+  }
+  
+  .partie-formulaire h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  select,
+  input[type="datetime-local"] {
+    width: 400px;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+  
+  input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #555;
+  }
+  

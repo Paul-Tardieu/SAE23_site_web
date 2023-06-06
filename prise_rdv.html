@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Prise de RDV</title>
+  <link rel="stylesheet" type="text/css" href="prise_rdv.css">
+</head>
+<body>
+  <header>
+    <a href="acceuil.html"><img class="logo" src="logo.png" alt="Logo"></a>
+    <h1>Prise de RDV</h1>
+  </header>
+  
+  <section>
+    <h2>Informations du rendez-vous</h2>
+    <form action="traitement_formulaire.php" method="post">
+      <div class="partie-formulaire">
+        <h3>Choix du patient existant :</h3>
+        <select name="patient">
+          <option value="">Sélectionnez un patient</option>
+          <option value="1">Patient 1</option>
+          <option value="2">Patient 2</option>
+          <option value="3">Patient 3</option>
+          <!-- Ajoutez ici les autres patients existants -->
+        </select>
+      </div>
+      
+      <div class="partie-formulaire">
+        <h3>Choix du médecin existant :</h3>
+        <select name="medecin">
+          <option value="">Sélectionnez un médecin</option>
+          <option value="1">Médecin 1</option>
+          <option value="2">Médecin 2</option>
+          <option value="3">Médecin 3</option>
+          <!-- Ajoutez ici les autres médecins existants -->
+        </select>
+      </div>
+      
+      <div class="partie-formulaire">
+        <h3>Date et heure du rendez-vous :</h3>
+        <input type="datetime-local" name="date_heure" required>
+      </div>
+      
+      <input type="submit" value="Prendre RDV">
+    </form>
+  </section>
+</body>
+</html>

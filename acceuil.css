@@ -6,9 +6,6 @@ body {
     padding: 20px;
     text-align: center;
   }
-  .art-shadow h3 {
-    text-shadow: 3px 2px #1f14eb;
-}
   header h1 {
     font-size: 60px;
     font-family: "Impact", fantasy;
