@@ -2,11 +2,11 @@
 <html>
 <head>
   <title>Nouveau Patient</title>
-  <link rel="stylesheet" type="text/css" href="nouveau_patient.css">
+  <link rel="stylesheet" type="text/css" href="../css/nouveau_patient.css">
 </head>
 <body>
   <header>
-    <a href="acceuil.html"><img class="logo" src="logo.png" alt="Logo"></a>
+    <a href="acceuil.html"><img class="logo" src="../img/logo.png" alt="Logo"></a>
   </header>
   
   <section>

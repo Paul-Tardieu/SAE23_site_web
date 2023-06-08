@@ -3,10 +3,26 @@
 <head>
   <meta charset="UTF-8">
   <title>Création de compte et Connexion</title>
-  <link rel="stylesheet" type="text/css" href="style1.css">
+  <link rel="stylesheet" type="text/css" href="../css/compte.css">
 </head>
 <body>
-  <a href="index.html"><img class="logo" src="logo.png" alt="Logo"></a>
+  <a href="index.html"><img class="logo" src="../img/logo.png" alt="Logo"></a>
+  <?php
+      // Démarrer la session
+      session_start();
+
+      // Vérifier s'il y a un message d'erreur
+      if (isset($_SESSION['erreur'])) {
+
+        // Afficher le message d'erreur
+        echo '<div class="error-message ">' . $_SESSION['erreur'] . '</div>';
+
+        // Supprimer le message d'erreur de la session
+        unset($_SESSION['erreur']);
+      }
+      // Supression totale des données de session en cas de retour a la page de connexion
+      session_destroy();
+      ?>
   <div class="container">
     <div class="form-container">
       
@@ -56,6 +72,7 @@
         <input type="submit" value="Se connecter">
 
       </form>
+
     </div>
   </div>
 </body>

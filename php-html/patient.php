@@ -4,19 +4,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Medical + - Patient</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
   <header>
     <div class="logo">
-        <a href="pole2.html"><img class="logo" src="logo.png" alt="Logo"></a>
+        <a href="pole1-2-3.php"><img class="logo" src="../img/logo.png" alt="Logo"></a>
     </div>
     <h1>Medical +</h1>
     <nav>
       <ul>
-        <li><a href="edt2.html">Emploi du temps</a></li>
-        <li><a href="rdv2.html">Rendez-vous</a></li>
-        <li><a href="patient2.html">Patients</a></li>
+        <li><a href="edt.php">Emploi du temps</a></li>
+        <li><a href="rdv.php">Rendez-vous</a></li>
+        <li><a href="patient.php">Patients</a></li>
       </ul>
     </nav>
   </header>

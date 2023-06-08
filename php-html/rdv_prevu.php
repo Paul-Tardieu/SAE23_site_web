@@ -2,11 +2,11 @@
 <html>
 <head>
   <title>Rendez-vous prévu</title>
-  <link rel="stylesheet" type="text/css" href="rdv_prevu.css">
+  <link rel="stylesheet" type="text/css" href="../css/rdv_prevu.css">
 </head>
 <body>
   <header>
-    <a href="acceuil.html"><img class="logo" src="logo.png" alt="Logo"></a>
+    <a href="acceuil.html"><img class="logo" src="../img/logo.png" alt="Logo"></a>
     <h1>Rendez-vous prévu</h1>
   </header>
   

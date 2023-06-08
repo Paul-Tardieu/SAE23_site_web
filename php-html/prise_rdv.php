@@ -2,11 +2,11 @@
 <html>
 <head>
   <title>Prise de RDV</title>
-  <link rel="stylesheet" type="text/css" href="prise_rdv.css">
+  <link rel="stylesheet" type="text/css" href="../css/prise_rdv.css">
 </head>
 <body>
   <header>
-    <a href="acceuil.html"><img class="logo" src="logo.png" alt="Logo"></a>
+    <a href="acceuil.html"><img class="logo" src="../img/logo.png" alt="Logo"></a>
     <h1>Prise de RDV</h1>
   </header>
   
