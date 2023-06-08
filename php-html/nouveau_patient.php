@@ -11,7 +11,7 @@
   
   <section>
     <h1>Nouveau Patient</h1>
-    <form action="traitement_formulaire.php" method="post">
+    <form action="traitement_creation_patients.php" method="post">
       <label for="nom">Nom :</label>
       <input type="text" id="nom" name="nom" required>
       

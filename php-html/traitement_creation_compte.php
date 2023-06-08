@@ -44,7 +44,7 @@ $stmt->execute();
 $result = $stmt->get_result();
 
 if ($result->num_rows > 0) {
-    // Si l'email existe déjà, stocker le message d'erreur dans une variable de session
+    // Si l'email existe déjà, faire un message d'erreur dans une variable de session
     $_SESSION['erreur'] = "Cet email est déjà utilisé";
     // Rediriger vers la page de connexion
     header('Location: compte.php');
@@ -59,9 +59,15 @@ if ($result->num_rows > 0) {
             exit;
             }
         // Si l'email n'existe pas encore, insérer les données dans la base de données
+        // Hachage du mot de passe avant de le stocker dans la base de données
+        $hashed_password = password_hash($password, PASSWORD_DEFAULT);
+
+        // Ensuite, stockage dans la table users
         $sql = "INSERT INTO users (prenom, nom, email, password, status) VALUES (?, ?, ?, ?, ?)";
         $stmt = $conn->prepare($sql);
-        $stmt->bind_param("sssss", $nom, $prenom, $email, $password, $status);
+
+        // Association des valeurs aux paramètres dans la requête SQL. s=string
+        $stmt->bind_param("sssss", $nom, $prenom, $email, $hashed_password, $status);
 
         if ($stmt->execute()) {
             echo "Inscription réussie";

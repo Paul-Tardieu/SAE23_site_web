@@ -9,7 +9,7 @@
 <body>
   <header>
     <div class="logo">
-      <a href="pole1-2-3.php"><img  src="../img/logo.png" alt="Logo"></a>
+      <a href="pole1-2-3.php"><img class="logo" src="../img/logo.png" alt="Logo"></a>
   </div>
     <h1>Medical +</h1>
     <nav>

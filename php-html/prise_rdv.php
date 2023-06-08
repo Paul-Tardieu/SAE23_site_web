@@ -1,4 +1,18 @@
 <!DOCTYPE html>
+<?php
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "medical_data";
+
+// Créer une connexion
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+// Vérifier la connexion
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+?>
 <html>
 <head>
   <title>Prise de RDV</title>
@@ -16,22 +30,28 @@
       <div class="partie-formulaire">
         <h3>Choix du patient existant :</h3>
         <select name="patient">
-          <option value="">Sélectionnez un patient</option>
-          <option value="1">Patient 1</option>
-          <option value="2">Patient 2</option>
-          <option value="3">Patient 3</option>
-          <!-- Ajoutez ici les autres patients existants -->
+            <option value="">Sélectionnez un patient</option>
+            <?php
+            $stmt = $conn->query('SELECT id, nom, prenom FROM patients');
+            while ($row = $stmt->fetch())
+            {
+                echo '<option value="'.$row['id'].'">'.$row['prenom'].' '.$row['nom'].'</option>';
+            }
+            ?>
         </select>
       </div>
       
       <div class="partie-formulaire">
         <h3>Choix du médecin existant :</h3>
         <select name="medecin">
-          <option value="">Sélectionnez un médecin</option>
-          <option value="1">Médecin 1</option>
-          <option value="2">Médecin 2</option>
-          <option value="3">Médecin 3</option>
-          <!-- Ajoutez ici les autres médecins existants -->
+            <option value="">Sélectionnez un médecin</option>
+            <?php
+            $stmt = $conn->query('SELECT id, nom FROM users WHERE status IN ("pole1", "pole2", "pole3")');
+            while ($row = $stmt->fetch())
+            {
+                echo '<option value="'.$row['id'].'">'.$row['nom'].'</option>';
+            }
+            ?>
         </select>
       </div>
       
@@ -45,3 +65,6 @@
   </section>
 </body>
 </html>
+<?php
+$conn->close();
+?>
